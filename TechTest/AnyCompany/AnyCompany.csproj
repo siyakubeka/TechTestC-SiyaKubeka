@@ -41,12 +41,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customer.cs" />
-    <Compile Include="CustomerRepository.cs" />
-    <Compile Include="Order.cs" />
-    <Compile Include="OrderRepository.cs" />
-    <Compile Include="OrderService.cs" />
+    <Compile Include="AnyCompany\Models\Customer.cs" />
+    <Compile Include="AnyCompany\Repositories\CustomerRepository.cs" />
+    <Compile Include="AnyCompany\Data\DatabaseManager.cs" />
+    <Compile Include="AnyCompany\Models\Order.cs" />
+    <Compile Include="AnyCompany\Repositories\OrderRepository.cs" />
+    <Compile Include="AnyCompany\Services\OrderService.cs" />
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\AnyCompany.dll" />
+    <Content Include="bin\Debug\AnyCompany.pdb" />
+    <Content Include="obj\Debug\AnyCompany.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\AnyCompany.dll" />
+    <Content Include="obj\Debug\AnyCompany.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\AnyCompany.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\AnyCompany.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
